@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 2,
+	"id": "pyDAEDALUS",
+	"name": "pyDAEDALUS — DX Wireframe Routing",
+	"version": "0.1.0",
+	"description": "Routes the active wireframe region's mesh with DAEDALUS: two-helix (DX) edges, B-form DNA, M13 scaffold. Needs a closed mesh with faces and no helices yet. Rescales the mesh to the size of the design.",
+	"tags": [
+		"Wireframe"
+	],
+	"authors": [
+		{
+			"name": "Bathe BioNanoLab, MIT"
+		}
+	],
+	"maintainers": [
+		{
+			"name": "Xin Shi"
+		}
+	],
+	"license": "GPL-2.0-or-later",
+	"repository": "https://github.com/xinshi-kul/pyDAEDALUS-foldnano",
+	"upstream": "https://github.com/lcbb/pyDAEDALUS",
+	"citations": [
+		{
+			"text": "Veneziano, R., Ratanalert, S., Zhang, K., Zhang, F., Yan, H., Chiu, W. and Bathe, M., Designer nanoscale DNA assemblies programmed from the top down, Science, 2016, 352(6293), p.1534.",
+			"doi": "10.1126/science.aaf4388"
+		}
+	],
+	"format": "foldnano_edit",
+	"applyStrategy": "replayMutationLogInRegion",
+	"requirements": [
+		"numpy",
+		"scipy",
+		"networkx",
+		"matplotlib",
+		"mpmath"
+	],
+	"parameters": [
+		{
+			"id": "min_edge_bp",
+			"label": "Minimum edge length (bp)",
+			"type": "number",
+			"default": 52,
+			"min": 31,
+			"step": 1,
+			"required": true,
+			"description": "Length of the shortest edge. The paper used 31, 42, 52, 63 and 73. Edges are rounded to whole helix turns."
+		}
+	]
+}

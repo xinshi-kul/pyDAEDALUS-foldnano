@@ -49,7 +49,8 @@ def adj_scaf_nick_pos(scaf_to_edge, scaf_nick_pos, num_bases):
 
     # # Adjust scaf_to_edge
     import numpy as np
-    shape = np.array(scaf_to_edge_adj, dtype=np).shape  # num_sides should be 2
+    # Changed 2026-11-03 for the Foldnano plugin: dtype=np is now dtype=object, which NumPy 2 needs.
+    shape = np.array(scaf_to_edge_adj, dtype=object).shape  # num_sides should be 2
     num_edges = shape[0]
     num_sides = shape[1]
 
