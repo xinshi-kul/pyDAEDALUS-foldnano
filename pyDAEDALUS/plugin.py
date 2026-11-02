@@ -69,6 +69,10 @@ def run(ctx: PluginContext) -> None:
     if _open_edges(mesh):
         raise ValueError("DAEDALUS needs a closed mesh: every edge must be shared by two faces.")
 
+    ctx.log(
+        "Experimental: the routing follows pyDAEDALUS, but designs from this plugin haven't been "
+        "folded yet. Check the design before ordering staples."
+    )
     routing_text, route = _route(mesh, int(ctx.get_param("min_edge_bp", 52)))
     routing = parse_cndo(routing_text)
 

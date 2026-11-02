@@ -3,9 +3,10 @@
 	"id": "pyDAEDALUS",
 	"name": "pyDAEDALUS — DX Wireframe Routing",
 	"version": "0.1.0",
-	"description": "Routes the active wireframe region's mesh with DAEDALUS: two-helix (DX) edges, B-form DNA, M13 scaffold. Needs a closed mesh with faces and no helices yet. Rescales the mesh to the size of the design.",
+	"description": "Experimental: follows the original pyDAEDALUS routing, but no design made with this plugin has been folded yet. Check the result before ordering staples. Routes the active wireframe region's mesh with two-helix (DX) edges, B-form DNA and an M13 scaffold. Needs a closed mesh in an empty wireframe region, and rescales the mesh to the size of the design.",
 	"tags": [
-		"Wireframe"
+		"Wireframe",
+		"Experimental"
 	],
 	"authors": [
 		{

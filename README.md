@@ -2,7 +2,11 @@
 
 A [Foldnano](https://github.com/XinShiLab/foldnano) plugin that routes a wireframe mesh as scaffolded DNA origami with two-helix (DX) edges. It is adapted from [pyDAEDALUS](https://github.com/lcbb/pyDAEDALUS) by the Bathe BioNanoLab, MIT, with the authors' permission, under the original GNU General Public License, version 2 or any later version.
 
-The plugin is not listed in Foldnano's plugin Hub yet. Wireframe regions are a developer preview in Foldnano, available while plugin dev mode is on.
+Install it in Foldnano from the plugin Hub's **Community Plugins** section.
+
+## Status
+
+Experimental. The routing code is upstream's and reproduces published staple sets from the paper when given the same spanning tree and scaffold start. Turning the routing into Foldnano helices and strands is new, and no design made with this plugin has been folded yet. Check the result before ordering staples. Wireframe support in Foldnano is itself a developer preview.
 
 ## What it does
 
